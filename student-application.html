@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Student Credit Card Application</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>
+Student Credit Card Application Form
+</h1>
+
+</header>
+
+
+
+<div class="application-box">
+
+
+<h2>Fill Your Details</h2>
+
+
+<form>
+
+
+<label>Name</label>
+<input type="text" placeholder="Enter Your Name">
+
+
+<label>Father Name</label>
+<input type="text" placeholder="Enter Father Name">
+
+
+<label>Mobile Number</label>
+<input type="number" placeholder="Enter Mobile Number">
+
+
+<label>Email</label>
+<input type="email" placeholder="Enter Email">
+
+
+<label>Aadhaar Number</label>
+<input type="number" placeholder="Enter Aadhaar Number">
+
+
+<label>Address</label>
+<textarea placeholder="Enter Address"></textarea>
+
+<h2>Upload Documents</h2>
+
+<label>Select Education Type</label>
+
+<select id="educationType" onchange="showDocuments()">
+
+<option value="">-- Select --</option>
+
+<option value="12th">
+12th Pass Student (Engineering/Graduation)
+</option>
+
+<option value="10th">
+10th Pass Student (Diploma/Polytechnic)
+</option>
+
+</select>
+
+
+<div id="documents"></div>
+
+
+<script src="application.js"></script>
+
+
+
+
+<select>
+
+<option>Engineering</option>
+
+<option>Medical</option>
+
+<option>Management</option>
+
+<option>Other</option>
+
+</select>
+
+
+
+<button type="submit">
+
+Submit Application
+
+</button>
+
+
+</form>
+
+
+</div>
+
+
+</body>
+</html>
